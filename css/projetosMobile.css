@@ -1,0 +1,187 @@
+/* ===============================
+   ESTILO GERAL (MOBILE FIRST)
+=================================*/
+
+:root {
+    --cor-primaria: #0077cc;
+    --cor-secundaria: #005fa3;
+    --cor-fundo: #f5f7fa;
+    --cor-texto: #333;
+    --cor-branca: #fff;
+    --cor-footer: #222;
+    --sombra: 0 2px 8px rgba(0, 0, 0, 0.1);
+    --raio: 10px;
+    --transicao: 0.3s ease;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  body {
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  /* ===============================
+     CABEÇALHO
+  =================================*/
+  
+  h1 {
+    text-align: center;
+    margin: 20px 0;
+    color: var(--cor-branca);
+    font-size: 1.8rem;
+  }
+
+/* HEADER */
+header {
+    background-color: var(--cor-primaria);
+    color: var(--cor-branca);
+    padding: 1rem;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+nav h1 {
+    font-size: 1.4rem;
+    margin-bottom: 0.8rem;
+}
+  /* ===============================
+     SEÇÃO DE PROJETOS
+  =================================*/
+  
+  section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    padding: 20px;
+  }
+  
+  section div {
+    background: var(--cor-branca);
+    border-radius: var(--raio);
+    box-shadow: var(--sombra);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    overflow: hidden;
+    transition: transform var(--transicao);
+  }
+  
+  section div:hover {
+    transform: translateY(-5px);
+  }
+  
+  section img {
+    width: 100%;
+    height: auto;
+    border-bottom: 3px solid var(--cor-primaria);
+  }
+  
+  section h2 {
+    color: var(--cor-primaria);
+    margin: 10px 0 5px;
+    font-size: 1.4rem;
+  }
+  
+  section p {
+    padding: 0 15px 15px;
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  /* ===============================
+     RODAPÉ
+  =================================*/
+  
+  footer {
+    background: var(--cor-footer);
+    color: var(--cor-branca);
+    text-align: center;
+    padding: 15px 10px;
+    margin-top: auto;
+    font-size: 0.9rem;
+  }
+  
+  /* ===============================
+     RESPONSIVO (TABLET / DESKTOP)
+  =================================*/
+  
+  @media (min-width: 600px) {
+}
+
+@media (min-width: 992px) {
+    nav {
+        flex-direction: row;
+        justify-content: space-between;
+        max-width: 1100px;
+        margin: 0 auto;
+        text-align: left;
+    }
+
+    nav h1 {
+        margin-bottom: 0;
+        font-size: 1.6rem;
+    }
+
+    main {
+        max-width: 1100px;
+        margin: 2rem auto;
+        text-align: left;
+    }
+
+    section h2 {
+        font-size: 1.5rem;
+    }
+}
+
+/* BOTÃO DO MENU MOBILE */
+.menu-btn {
+    font-size: 2rem;
+    cursor: pointer;
+    user-select: none;
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    color: var(--cor-branca);
+}
+
+/* CONTAINER DO MENU */
+.container {
+    display: none;
+    flex-direction: column;
+    gap: 0.8rem;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.container a {
+    color: var(--cor-branca);
+    text-decoration: none;
+    font-weight: bold;
+    transition: var(--transicao);
+}
+
+.container a:hover {
+    color: var(--cor-secundaria);
+}
+
+/* MENU ATIVO (JS) */
+.container.active {
+    display: flex;
+}
