@@ -4,13 +4,13 @@
    VARIÁVEIS DE CORES E FONTES
 ----------------------------------*/
 :root {
-    --cor-primaria: #0674e3;
-    --cor-secundaria: #097ae5;
-    --cor-terciaria: #94c0d2;
-    --cor-fundo: #f0f0f0;
-    --cor-texto: #333333;
+    --cor-primaria: #004AAD;
+    --cor-secundaria: #007BFF;
+    --cor-fundo: #f9f9f9;
+    --cor-texto: #333;
     --cor-texto-claro: #ffffff;
     --cor-borda: #cccccc;
+    --cor-hover: #0056b3;
     --font-principal: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 

@@ -3,12 +3,13 @@
 =================================*/
 
 :root {
-    --cor-primaria: #0077cc;
-    --cor-secundaria: #005fa3;
-    --cor-fundo: #f5f7fa;
+    --cor-primaria: #004AAD;
+    --cor-secundaria: #007BFF;
+    --cor-fundo: #f9f9f9;
     --cor-texto: #333;
     --cor-branca: #fff;
     --cor-footer: #222;
+    --cor-hover: #0056b3;
     --sombra: 0 2px 8px rgba(0, 0, 0, 0.1);
     --raio: 10px;
     --transicao: 0.3s ease;
@@ -142,7 +143,7 @@ nav h1 {
     main {
         max-width: 1100px;
         margin: 2rem auto;
-        text-align: left;
+        text-align: center;
     }
 
     section h2 {
