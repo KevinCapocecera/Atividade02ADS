@@ -8,40 +8,10 @@
     <title>ONG Esperança | Cadastro</title>
     <link rel="stylesheet" href="/css/cadastroMobile.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+    
 
 
 </head>
-<script>
-    document.addEventListener("DOMContentLoaded", () => {
-        const cpf = document.getElementById("cpf");
-        const telefone = document.getElementById("telefone");
-        const cep = document.getElementById("cep");
-
-        cpf.addEventListener("input", e => {
-            let v = e.target.value.replace(/\D/g, "");
-            if (v.length > 11) v = v.slice(0, 11);
-            v = v.replace(/(\d{3})(\d)/, "$1.$2")
-                .replace(/(\d{3})(\d)/, "$1.$2")
-                .replace(/(\d{3})(\d{1,2})$/, "$1-$2");
-            e.target.value = v;
-        });
-
-        telefone.addEventListener("input", e => {
-            let v = e.target.value.replace(/\D/g, "");
-            if (v.length > 11) v = v.slice(0, 11);
-            v = v.replace(/(\d{2})(\d)/, "($1) $2")
-                .replace(/(\d{5})(\d)/, "$1-$2");
-            e.target.value = v;
-        });
-
-        cep.addEventListener("input", e => {
-            let v = e.target.value.replace(/\D/g, "");
-            if (v.length > 8) v = v.slice(0, 8);
-            v = v.replace(/(\d{5})(\d)/, "$1-$2");
-            e.target.value = v;
-        });
-    })</script>
-
 <body>
     <header>
         <nav>
@@ -54,7 +24,8 @@
             <div class="container" id="menu">
                 <a href="index.html">Home</a>
                 <a href="projetos.html">Projetos</a>
-                <a href="cadastro.html">Cadastro</a>
+                <a href="cadastro.html">Cadastro</a><br>
+                <a href="login.html">Login</a>
             </div>
         </nav>
     </header>

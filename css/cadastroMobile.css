@@ -144,11 +144,11 @@ footer {
 
 @media (min-width: 992px) {
     nav {
-        flex-direction: row;
-        justify-content: space-between;
+        flex-direction: column;
+        justify-content: center;
         max-width: 1100px;
         margin: 0 auto;
-        text-align: left;
+        text-align: center;
     }
 
     nav h1 {
